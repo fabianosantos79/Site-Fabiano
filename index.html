@@ -1,1432 +1,894 @@
 <!DOCTYPE html>
-<html lang="zxx">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Meta -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="Anil z" name="author">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Creating a professional, modern and sophisticated online resume website is easy with Martyn CV / Resume">
+<meta name="keywords" content="CV, resume, card, vcard, online cv, online resume, professional resume, portfolio, one page, bootstrap responsive, creative html template, creative design, parallax, personal">
 
-    <link rel="icon" href="images/favicon.png">
-    <title>Fabiano SSantos</title>
-
-    <!-- font -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700,900&display=swap" rel="stylesheet">
-    <!-- end font -->
-
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/font-awesome.css">
-    <link rel="stylesheet" href="css/fakeLoader.css">
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/owl.theme.default.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/style.css">
+<!-- SITE TITLE -->
+<title>Fabiano SSantos - Developer Web</title>
+<!-- Favicon Icon -->
+<link rel="shortcut icon" type="image/x-icon" href="assets/images/icone.png">
+<!-- Animation CSS -->
+<link rel="stylesheet" href="assets/css/animate.css">	
+<!-- Latest Bootstrap min CSS -->
+<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+<!-- Icon Font CSS -->
+<link rel="stylesheet" href="assets/css/ionicons.min.css">
+<link rel="stylesheet" href="assets/css/themify-icons.css">
+<!-- FontAwesome CSS -->
+<link rel="stylesheet" href="assets/css/all.min.css">
+<!-- Flaticon Font CSS -->
+<link rel="stylesheet" href="assets/css/flaticon.css">
+<!--- owl carousel CSS-->
+<link rel="stylesheet" href="assets/owlcarousel/css/owl.carousel.min.css">
+<link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.css">
+<link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.default.min.css">
+<!-- Magnific Popup CSS -->
+<link rel="stylesheet" href="assets/css/magnific-popup.css">
+<!-- Scrollbar Css -->
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+<!-- Style CSS -->
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar-nav" data-offset="110">
 
-    <!-- loader -->
-    <div class="fakeLoader"></div>
-    <!-- loader -->
+<!-- LOADER -->
+<div class="preloader">
+    <div class="loader">
+		<div class="loader-inner ball-scale">
+          <div></div>
+          <div></div>
+          <div></div>
+		</div>
+	</div>
+</div>
+<!-- END LOADER --> 
 
-    <!-- header -->
-    <header id="home">
-
-        <!-- navbar -->
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark">
-
-                <!-- navbar brand or logo -->
-                <a href="#" class="navbar-brand">
-                    <h2>Fabiano SSantos</h2>
-                </a>
-                <!-- end navbar brand or logo -->
-
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo" aria-controls="navbarTogglerDemo" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div id="navbarTogglerDemo" class="collapse navbar-collapse">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a href="#about" class="nav-link">Sobre mim</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#resume" class="nav-link">Minha História</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#portfolio" class="nav-link">Trabalhos Realizados</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#contact" class="nav-link">Contato</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+<!-- START HEADER -->
+<header class="header_wrap fixed-top light_skin hover_menu_style3 transparent-header">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg"> 
+    	<a class="navbar-brand page-scroll" href="#home_section">
+        	<img class="logo_light" src="assets/images/logo.png" alt="logo" />
+            <img class="logo_dark" src="assets/images/logo.png" alt="logo" />
+            <img class="logo_default" src="assets/images/logo.png" alt="logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="ion-android-menu"></span> </button>
+      	<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        	<a class="navbar-brand page-scroll" href="#home_section">
+                <img class="logo_light" src="assets/images/logo_white.png" alt="logo" />
+                <img class="logo_dark" src="assets/images/logo_dark.png" alt="logo" />
+                <img class="logo_default" src="assets/images/logo_dark.png" alt="logo" />
+            </a>
+            <ul class="navbar-nav">
+                
+                <li>
+                    <a class="nav-link page-scroll" href="#about">Quem sou</a>
+                </li>
+                <li>
+                    <a class="nav-link page-scroll" href="#services">O que faço</a>
+                </li>
+                <li>
+                    <a class="nav-link page-scroll" href="#portfolio">Trabalhos realizados</a>
+                </li>
+                <li>
+                    <a class="nav-link page-scroll" href="#contact">Contato</a>
+                </li>
+            </ul>
         </div>
-        <!-- end navbar -->
+    </nav>
+  </div>
+</header>
+<!-- START HEADER --> 
 
+<!-- START SECTION BANNER -->
+<section id="home_section" class="banner_section banner_shape bg_black3">
+    <div class="banner_slide_content pb-0">
+        <div class="container"><!-- STRART CONTAINER -->
+            <div class="row justify-content-between align-items-center">
+                <div class="col-xl-6 col-md-7">
+                    <div class="banner_content text_white banner_center_content">
+                        <h2 class="animation" data-animation="fadeInUp" data-animation-delay="0.02s">Bem-vindo</h2>
+                        <div id="typed-strings" class="d-none">
+                            <b>Meu nome é Fabiano S. Santos</b> <b>Sou um Desenvolvedor Web Frontend e Backend</b>
+                        </div>
+                        <h4 class="animation" data-animation="fadeInUp" data-animation-delay="0.03s"> <span id="typed-text" class="text_default"></span></h4>
+                        <p class="animation" data-animation="fadeInUp" data-animation-delay="0.04s">Conheça aqui a minha trajetória educacional e experiência profissional, caso prefira acesse meu currículo no link abaixo.</p>
+                        <a href="#" class="btn btn-default rounded-0 btn-aylen animation" data-animation="fadeInUp" data-animation-delay="0.05s">Download Currículo</a>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-md-5">
+                	<div class="banner_img animation" data-animation="fadeInUp" data-animation-delay="0.02s">
+                    	<img src="assets/images/fabiano_foto.png" alt="my_image"/>
+                    </div>
+                </div>
+            </div>
+        </div><!-- END CONTAINER-->
+    </div>
+</section>
+<!-- END SECTION BANNER --> 
 
-
-    </header>
-    <!-- end header -->
-
-    <!-- about -->
-    <div id="about" class="about segments">
-        <div class="container">
-            <div class="box-content">
-                <div class="row">
-                    <div class="col-md-6 col-sm-12 col-xs-12">
-                        <div class="content-left">
-                            <div class="section-title section-title-left">
-                                <h3>Sobre mim</h3>
+<!-- START SECTION ABOUT US -->
+<section id="about" class="bg_black4">
+    <div class="container">
+    	<div class="row align-items-center animation" data-animation="fadeInUp" data-animation-delay="0.02s">
+        	<div class="col-md-12">
+            	<div class="heading_s1 heading_light"> 
+                      <h2>Quem sou</h2>
+                    </div>
+                    <p class="text-white">Meu nome é Fabiano da Silva Santos, sou graduado em Análise e Desenvolvimento de Sistemas e Web Designer desde 2007, especializado em criação de sites, sistemas, portais, lojas virtuais, e-mail marketing, banners virtuais, logos e editoração de revista virtual.</p>
+                    <p class="text-white">Programador com conhecimentos PHP e Javascript atuo no desenvolvimento Backend e Frontend, desenvolvi diversos projetos pessoais.<br><br> Web Designer com formação em diversos cursos para criação de interfaces web e gráfica, participo desde o início da criação da identidade visual até o desenvolvimento final de todos componentes, seguindo os principais conceitos de UX/UI, SEO, responsividade e acessibilidade.</p>
+                    <p>&nbsp;</p>
+            </div>
+            
+        </div>
+        <div class="row">
+        	<div class="col-12">
+            	<div class="medium_divider clearfix"></div>
+            </div>
+        </div>
+        <div class="row">
+                <div class="col-lg-4 col-md-12">
+                	<div class="about_img2 animation" data-animation="fadeInUp" data-animation-delay="0.02s">
+                    	<img src="assets/images/about_origin.png" alt="about_img"/>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12">
+                	<div class="about_info text_white animation" data-animation="fadeInUp" data-animation-delay="0.02s">
+                		<div class="row">
+                    	<div class="col-md-6">
+                        	<div class="heading_s1 mb-4"> 
+                                <h5>Informações pessoais</h5>
                             </div>
-                            <div class="content">
-                                <h2>Bem-vindo</h2>
-                                <p>Meu nome é Fabiano da Silva Santos, sou graduado em Análise e Desenvolvimento de Sistemas e Web Designer desde 2007, especializado em criação de sites, sistemas, portais, lojas virtuais, e-mail marketing, cartazes, banners físicos e virtuais, cartões de visita, logos e editoração de revista física e/ou virtual.</p><br/>
-                                <p>Programador com conhecimentos PHP e Javascript atuo no desenvolvimento Backend e Frontend, desenvolvi diversos projetos nos cursos que realizei. Web Designer com diversos cursos para criação de interfaces web e gráfica, atuo desde 2011 como Assistente Web, participo desde a criação da identidade até o desenvolvimento de todos componentes.</p><br/>
-                                <p>Fotógrafo e Videomaker por hobbie, tive a oportunidade de profissionalizar essas atividades realizando festas aos finais de semana e trabalhos eventuais.</p>
+                            <ul class="profile_info_style2 list_none">
+                                <li>
+                                    <span class="title">Nascimento:</span>
+                                    <p>17 Outubro 1979</p>
+                                </li>
+                                <li>
+                                    <span class="title">Whatsapp:</span>
+                                    <p>(11) 9 6480-5636</p>
+                                </li>
+                                <li>
+                                    <span class="title">E-mail:</span>
+                                    <a href="mailto:fabiano.ssantos79@gmail.com">fabiano.ssantos79@gmail.com</a>
+                                </li>
+                                <li>
+                                    <span class="title">Endereço:</span>
+                                    <p> Avenida Aricanduva - São Paulo </p>
+                                </li>
+                                <li>
+                                    <span class="title">Github:</span>
+                                    <a href="http://github.com/fabianosantos79" target="_blank">github.com/fabianosantos79</a>
+                                </li>
+                                <li>
+                                    <span class="title">Behance:</span>
+                                    <a href="https://www.behance.net/fabianossantos" target="_blank">behance.net/fabianossantos</a>
+                                </li>
+                            </ul>
+                            <ul class="list_none social_icons rounded_social mt-3">
+                                <li><a href="https://www.facebook.com/fabiano.silvasantos.96" target="_blank" class="sc_facebook"><i class="ion-social-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/fabiano_ssantos" target="_blank" class="sc_twitter"><i class="ion-social-twitter"></i></a></li>
+                                <li><a href="https://www.instagram.com/fabianossantos/" target="_blank" class="sc_instagram"><i class="ion-social-instagram-outline"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="heading_s1 mb-4"> 
+                                <h5>Resumo das minhas habilidades</h5>
+                            </div>
+                            <div class="skills">
+                                <div class="skill_content pr_style1">
+                                    <div class="progrees_bar_text">
+                                        <b>PHP</b>
+                                    </div>
+                                    <div class="progress">
+                                      <div class="count_pr"><span class="counter">80</span>%</div>
+                                      <div class="progress-bar d-block" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                      </div>
+                                   </div>
+                                </div>
+                                <div class="skill_content pr_style1">
+                                    <div class="progrees_bar_text">
+                                        <b>Javascript</b>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="count_pr"><span class="counter">80</span>%</div>
+                                      <div class="progress-bar d-block" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                      </div>
+                                   </div>
+                                </div>
+                                <div class="skill_content pr_style1">
+                                    <div class="progrees_bar_text">
+                                        <b>HTML 5 / CSS 3</b>
+                                    </div>
+                                    <div class="progress pr_style1">
+                                    <div class="count_pr"><span class="counter">90</span>%</div>
+                                      <div class="progress-bar d-block" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                      </div>
+                                   </div>
+                                </div>
+                                
+                                <div class="skill_content pr_style1">
+                                    <div class="progrees_bar_text">
+                                        <b>Jquery</b>
+                                    </div>
+                                    <div class="progress">
+                                    <div class="count_pr"><span class="counter">85</span>%</div>
+                                      <div class="progress-bar d-block" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                      </div>
+                                   </div>
+                                </div>
+                                <div class="skill_content pr_style1">
+                                    <div class="progrees_bar_text">
+                                        <b>Bootstrap</b>
+                                    </div>
+                                    <div class="progress">
+                                    <div class="count_pr"><span class="counter">70</span>%</div>
+                                      <div class="progress-bar d-block" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                      </div>
+                                   </div>
+                                </div>
+                                <div class="skill_content pr_style1">
+                                    <div class="progrees_bar_text">
+                                        <b>Wordpress</b>
+                                    </div>
+                                    <div class="progress">
+                                    <div class="count_pr"><span class="counter">90</span>%</div>
+                                      <div class="progress-bar d-block" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                      </div>
+                                   </div>
+                                </div>
+                                
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-sm-12 col-xs-12">
-                        <div class="content-right"></div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</section>
+<!-- END SECTION ABOUT US -->
+
+<!-- START SECTION SERVICES -->
+<section id="services" class="bg_black2">
+	<div class="container">
+    	<div class="row justify-content-center">
+        	<div class="col-xl-6 col-lg-7 col-md-9 text-center">
+            	<div class="heading_s1 heading_light animation text-center" data-animation="fadeInUp" data-animation-delay="0.02s">
+                	<h2>O que faço</h2>
+                </div>
+                <!--
+                <p class="animation text-white" data-animation="fadeInUp" data-animation-delay="0.03s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                -->
+            </div>
+        </div>
+        <div class="row animation" data-animation="fadeInUp" data-animation-delay="0.04s">
+        	<div class="col-lg-4 col-sm-6 text-center">
+            	<div class="icon_box icon_box_style_3 radius_box_10 box_dark">
+                    <div class="box_icon mb-3">	
+                        <i class="ti-layout"></i>
+                    </div>
+                    <div class="icon_box_content text_white">
+                        <h5>Criação de sites</h5>
+                        <p>Criação de sites, websites personlizados. Sites em HTML5, CSS3, Jquery, Bootstrap, PHP e Mysql</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 text-center">
+            	<div class="icon_box icon_box_style_3 radius_box_10 box_dark">
+                    <div class="box_icon mb-3">	
+                        <i class="ti-shopping-cart"></i>
+                    </div>
+                    <div class="icon_box_content text_white">
+                        <h5>Lojas Virtuais</h5>
+                        <p>Desenvolvo o layout, cadastro de produtos, integração com os meios de pagamento e monitoramento de vendas</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 text-center">
+            	<div class="icon_box icon_box_style_3 radius_box_10 box_dark">
+                    <div class="box_icon mb-3">	
+                        <i class="ti-wordpress"></i>
+                    </div>
+                    <div class="icon_box_content text_white">
+                        <h5>Wordpress / Blogs</h5>
+                        <p>Blogs e sites personalizados, responsivos e desenvolvidos sobre a plataforma Wordpress</p>
+                    </div>
+                 </div>
+            </div>
+        	<div class="col-lg-4 col-sm-6 text-center">
+            	<div class="icon_box icon_box_style_3 radius_box_10 box_dark">
+                    <div class="box_icon mb-3">	
+                        <i class="ti-image"></i>
+                    </div>
+                    <div class="icon_box_content text_white">
+                        <h5>Landingpages / E-mkt</h5>
+                        <p>Landingpages e E-mail Marketing para captação de leads, vendas e campanhas</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 text-center">
+            	<div class="icon_box icon_box_style_3 radius_box_10 box_dark">
+                    <div class="box_icon mb-3">	
+                        <i class="ti-mobile"></i>
+                    </div>
+                    <div class="icon_box_content text_white">
+                        <h5>Design Responsivo</h5>
+                        <p>Sites adaptáveis em todos os dispositivos, computador, tablet e celular</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 text-center">
+            	<div class="icon_box icon_box_style_3 radius_box_10 box_dark">
+                    <div class="box_icon mb-3">	
+						<i class="ti-layers"></i>
+                    </div>
+                    <div class="icon_box_content text_white">
+                        <h5>Sistemas</h5>
+                        <p>Sistemas personalizados conforme a necessidade da sua empresa</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 text-center">
+            	<div class="icon_box icon_box_style_3 radius_box_10 box_dark">
+                    <div class="box_icon mb-3">	
+						<i class="ti-search"></i>
+                    </div>
+                    <div class="icon_box_content text_white">
+                        <h5>Serviços de SEO</h5>
+                        <p>Otimização de sites, páginas web para melhorar o posicionamento nos buscadores organicos do Google</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 text-center">
+            	<div class="icon_box icon_box_style_3 radius_box_10 box_dark">
+                    <div class="box_icon mb-3">	
+						<i class="ti-write"></i>
+                    </div>
+                    <div class="icon_box_content text_white">
+                        <h5>Criação de Marca</h5>
+                        <p>Desenvolvo o logotipo, paleta de cores, tipografia e toda identidade visual do seu site ou loja virtual</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 text-center">
+            	<div class="icon_box icon_box_style_3 radius_box_10 box_dark">
+                    <div class="box_icon mb-3">	
+						<i class="ti-settings"></i>
+                    </div>
+                    <div class="icon_box_content text_white">
+                        <h5>Manutenção</h5>
+                        <p>Precisa de ajustes, correções ou melhorias em seu site? posso avaliar e orçar sem compromisso</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- end about -->
+</section>
+<!-- END SECTION SERVICES -->
 
-    <!-- resume -->
-    <div id="resume" class="resume segments">
-        <div class="container">
-            <div class="box-content">
-                <div class="section-title">
-                    <h3>Minha História</h3>
+<!-- START SECTION PORTFOLIO -->
+<section id="portfolio" class="pb_70 bg_black4">
+    <div class="container">
+    	<div class="row justify-content-center">
+            <div class="col-xl-6 col-lg-7 col-md-9 text-center">
+                <div class="heading_s1 heading_light animation" data-animation="fadeInUp" data-animation-delay="0.02s">
+                    <h2>Trabalhos Realizados</h2>
                 </div>
-                <div class="owl-carousel owl-theme">
-                    <div class="content">
-                        <!-- my experience -->
-                        <div class="row ">
-                            <div class="col-md-6 col-sm-12 col-xs-12">
-                                <div class="content-left">
-                                    <div class="title-resume">
-                                        <h3>Educação</h3>
-                                        <h2>Resumo da minha <span>Formação Acadêmica</span></h2>
+                <!--
+                <p class="animation text-white" data-animation="fadeInUp" data-animation-delay="0.03s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="cleafix small_divider"></div>
+            </div>
+        </div>
+        <div class="row mb-4 mb-md-5">
+            <div class="col-md-12 text-center">
+                <ul class="list_none grid_filter filter_tab1 filter_white animation" data-animation="fadeInUp" data-animation-delay="0.04s">
+                    <li><a href="#" class="current" data-filter="*">Todos</a></li>
+                    <li><a href="#" data-filter=".html">HTML/CSS</a></li>
+                    <li><a href="#" data-filter=".php">PHP</a></li>
+                    <li><a href="#" data-filter=".javascript">Javascript</a></li>
+                    <li><a href="#" data-filter=".wordpress">Wordpress</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="grid_container gutter_medium work_col3 portfolio_gallery portfolio_style1 animation masonry" data-animation="fadeInUp" data-animation-delay="0.04s">
+                	<li class="grid-sizer"></li>
+                    <!-- START PORTFOLIO ITEM -->
+                   <li class="grid_item wordpress php">
+                    <div class="portfolio_item">
+                        <a href="#" class="image_link">
+                            <img src="assets/images/site24.png" alt="image">
+                        </a>
+                            <div class="portfolio_content">
+                                <div class="link_container">
+                                    <a href="assets/images/site24_p1.png" class="image_popup"><i class="ion-image"></i></a>
+                                    <a href="assets/images/site24_p2.png" class="image_popup  d-none"></a>
+                                </div>
+                                <h5><a href="#" data-toggle="modal" data-target="#pr_modal">Hotsite Barbearia</a></h5>
+                                <p>Site para Barbearia com sistema de agendamento - Wordpress e PHP</p>
+                          </div>
+                    </div>
+                </li>
+                <!-- END PORTFOLIO ITEM -->
+                    <!-- START PORTFOLIO ITEM -->
+                    <li class="grid_item wordpress php">
+                        <div class="portfolio_item">
+                            <a href="#" class="image_link">
+                                <img src="assets/images/site1.png" alt="image">
+                            </a>
+                                <div class="portfolio_content">
+                                    <div class="link_container">
+                                        <a href="assets/images/site1_p1.png" class="image_popup"><i class="ion-images"></i></a>
+                                        <a href="assets/images/site1_p2.png" class="image_popup d-none"></a>
+                                        <a href="assets/images/site1_p3.png" class="image_popup d-none"></a>
+                                        <a href="assets/images/site1_p4.png" class="image_popup d-none"></a>
                                     </div>
+                                    <h5><a href="#" data-toggle="modal" data-target="#pr_modal">Projeto Academia</a></h5>
+                                    <p>Site criado em Wordpress e PHP, com edição de HTML e CSS</p>
+                              </div>
+                        </div>
+                    </li>
+                    <!-- END PORTFOLIO ITEM -->
+                    
+                    <!-- START PORTFOLIO ITEM -->
+                    <li class="grid_item wordpress php">
+                        <div class="portfolio_item">
+                        	<div class="carousel_slider owl-carousel owl-theme dots_white" data-autoplay="true" data-loop="false" data-animate-in="fadeIn" data-animate-out="fadeOut" data-autoplay-timeout="3000" data-items="1">
+                                <a href="#" class="image_link">
+                                    <img src="assets/images/site2.png" alt="image">
+                                </a>
+                         	</div>
+                                <div class="portfolio_content">
+                                    <div class="link_container">
+                                        <a href="assets/images/site2_p1.png" class="image_popup"><i class="ion-images"></i></a>
+                                        <a href="assets/images/site2_p2.png" class="image_popup d-none"></a>
+                                        <a href="assets/images/site2_p3.png" class="image_popup d-none"></a>
+                                    </div>
+                                    <h5><a href="#" data-toggle="modal" data-target="#pr_modal">Site Institucional</a></h5>
+                                    <p>Projeto feito em Wordpress e PHP, com edição de HTML e CSS</p>
+                              </div>
+                        </div>
+                    </li>
+                    <!-- END PORTFOLIO ITEM -->
+                    <!-- START PORTFOLIO ITEM -->
+                    <li class="grid_item wordpress php">
+                        <div class="portfolio_item">
+                            <a href="#" class="image_link">
+                                <img src="assets/images/site3.png" alt="image">
+                            </a>
+                                <div class="portfolio_content">
+                                    <div class="link_container">
+                                        <a href="assets/images/site3_p1.png" class="image_popup"><i class="ion-image"></i></a>
+                                        <a href="assets/images/site3_p2.png" class="image_popup d-none"></a>
+                                        <a href="assets/images/site3_p3.png" class="image_popup d-none"></a>
+                                        <a href="assets/images/site3_p4.png" class="image_popup d-none"></a>
+                                        <a href="assets/images/site3_p5.png" class="image_popup d-none"></a>
+                                    </div>
+                                    <h5><a href="#" data-toggle="modal" data-target="#pr_modal">Sistema EAD</a></h5>
+                                    <p>Página de venda de cursos e sistema educacional com gestão de docentes e alunos</p>
+                              </div>
+                        </div>
+                    </li>
+                    <!-- END PORTFOLIO ITEM -->
+                    <!-- START PORTFOLIO ITEM -->
+                    <li class="grid_item wordpress php">
+                        <div class="portfolio_item">
+                            <a href="#" class="image_link">
+                                <img src="assets/images/site4.png" alt="image">
+                            </a>
+                                <div class="portfolio_content">
+                                    <div class="link_container">
+                                        <a href="assets/images/site4_p1.png" class="image_popup"><i class="ion-image"></i></a>
+                                        <a href="assets/images/site4_p2.png" class="image_popup d-none"></a>
+                                        <a href="assets/images/site4_p3.png" class="image_popup d-none"></a>
+                                    </div>
+                                    <h5><a href="#" data-toggle="modal" data-target="#pr_modal">Site Delivery</a></h5>
+                                    <p>Site criado em wordpress e PHP com sistema de solicitação de pedidos.</p>
+                              </div>
+                        </div>
+                    </li>
+                    <!-- END PORTFOLIO ITEM -->
+                    <!-- START PORTFOLIO ITEM -->
+                    <li class="grid_item wordpress php">
+                        <div class="portfolio_item">
+                            <a href="#" class="image_link">
+                                <img src="assets/images/site5.png" alt="image">
+                            </a>
+                                <div class="portfolio_content">
+                                    <div class="link_container">
+                                        <a href="assets/images/site5_p1.png" class="image_popup"><i class="ion-image"></i></a>
+                                        <a href="assets/images/site5_p2.png" class="image_popup d-none"></a>
+                                        <a href="assets/images/site5_p3.png" class="image_popup d-none"></a>
+                                        <a href="assets/images/site5_p4.png" class="image_popup d-none"></a>
+                                        <a href="assets/images/site5_p5.png" class="image_popup d-none"></a>
+                                    </div>
+                                    <h5><a href="#" data-toggle="modal" data-target="#pr_modal">Loja Virtual</a></h5>
+                                    <p>E-commerce desenvolvido com PHP e Wordpress, com módulo de pagamento, envio para os correios e gestão de e-mail.</p>
+                              </div>
+                        </div>
+                    </li>
+                    <!-- END PORTFOLIO ITEM -->
+                    <!-- START PORTFOLIO ITEM -->
+                    <li class="grid_item html javascript">
+                        <div class="portfolio_item">
+                            <a href="#" class="image_link">
+                                <img src="assets/images/site6.png" alt="image">
+                            </a>
+                                <div class="portfolio_content">
+                                    <div class="link_container">
+                                        <a href="assets/images/site6_p1.png" class="image_popup"><i class="ion-image"></i></a>
+                                        <a href="assets/images/site6_p2.png" class="image_popup  d-none"></a>
+                                    </div>
+                                    <h5><a href="#" data-toggle="modal" data-target="#pr_modal">Site Hotel</a></h5>
+                                    <p>Site criado em HTML 5, CSS 3 utilizando Flex-Box e animações em Javascript</p>
+                              </div>
+                        </div>
+                    </li>
+                    <!-- END PORTFOLIO ITEM -->
+                    <!-- START PORTFOLIO ITEM -->
+                    <li class="grid_item html javascript">
+                        <div class="portfolio_item">
+                            <a href="#" class="image_link">
+                                <img src="assets/images/site7.png" alt="image">
+                            </a>
+                                <div class="portfolio_content">
+                                    <div class="link_container">
+                                        <a href="assets/images/site7_p1.png" class="image_popup"><i class="ion-image"></i></a>
+                                        <a href="assets/images/site7_p2.png" class="image_popup  d-none"></a>
+                                    </div>
+                                    <h5><a href="#" data-toggle="modal" data-target="#pr_modal">Template Clínica</a></h5>
+                                    <p>Layout construído com Flexbox do CSS 3, HTML 5 e Javascript</p>
+                              </div>
+                        </div>
+                    </li>
+                    <!-- END PORTFOLIO ITEM -->
+                     <!-- START PORTFOLIO ITEM -->
+                    <li class="grid_item html javascript">
+                        <div class="portfolio_item">
+                            <a href="#" class="image_link">
+                                <img src="assets/images/site8.png" alt="image">
+                            </a>
+                                <div class="portfolio_content">
+                                    <div class="link_container">
+                                        <a href="assets/images/site8_p1.png" class="image_popup"><i class="ion-image"></i></a>
+                                        <a href="assets/images/site8_p2.png" class="image_popup  d-none"></a>
+                                        <a href="assets/images/site8_p3.png" class="image_popup  d-none"></a>
+                                        <a href="assets/images/site8_p4.png" class="image_popup  d-none"></a>
+                                        <a href="assets/images/site8_p5.png" class="image_popup  d-none"></a>
+
+                                    </div>
+                                    <h5><a href="#" data-toggle="modal" data-target="#pr_modal">Template Padrão</a></h5>
+                                    <p>Landingpage criada utilizando HTML/CSS/Javascript</p>
+                              </div>
+                        </div>
+                    </li>
+                    <!-- END PORTFOLIO ITEM -->
+                     <!-- START PORTFOLIO ITEM -->
+                     <li class="grid_item html javascript">
+                        <div class="portfolio_item">
+                            <a href="#" class="image_link">
+                                <img src="assets/images/site10.png" alt="image">
+                            </a>
+                                <div class="portfolio_content">
+                                    <div class="link_container">
+                                        <a href="assets/images/site10_p1.png" class="image_popup"><i class="ion-image"></i></a>
+                                        <a href="assets/images/site10_p11.png" class="image_popup  d-none"></a>
+                                        <a href="assets/images/site10_p2.png" class="image_popup  d-none"></a>
+                                        <a href="assets/images/site10_p22.png" class="image_popup  d-none"></a>
+                                        <a href="assets/images/site10_p23.png" class="image_popup  d-none"></a>
+                                        <a href="assets/images/site10_p3.png" class="image_popup  d-none"></a>
+                                        <a href="assets/images/site10_p31.png" class="image_popup  d-none"></a>
+                                        <a href="assets/images/site10_p4.png" class="image_popup  d-none"></a>
+
+                                    </div>
+                                    <h5><a href="#" data-toggle="modal" data-target="#pr_modal">PDI em Tirinhas</a></h5>
+                                    <p>Portal criado com Javascript, CSS e HTML para atender demanda do Senac</p>
+                              </div>
+                        </div>
+                    </li>
+                    <!-- END PORTFOLIO ITEM -->
+                                        <!-- START PORTFOLIO ITEM -->
+                    <li class="grid_item html javascript">
+                        <div class="portfolio_item">
+                            <a href="#" class="image_link">
+                                <img src="assets/images/site12.png" alt="image">
+                            </a>
+                                <div class="portfolio_content">
+                                    <div class="link_container">
+                                        <a href="assets/images/site12_p1.png" class="image_popup"><i class="ion-image"></i></a>
+                                        <a href="assets/images/site12_p2.png" class="image_popup  d-none"></a>
+                                        <a href="assets/images/site12_p3.png" class="image_popup  d-none"></a>
+                                    </div>
+                                    <h5><a href="#" data-toggle="modal" data-target="#pr_modal">Qualitec Serviços</a></h5>
+                                    <p>Layout construído com HTML e CSS, utilizando técnicas de Grid e Javascript</p>
+                              </div>
+                        </div>
+                    </li>
+                    <!-- END PORTFOLIO ITEM -->
+                    <!-- END PORTFOLIO ITEM -->
+                   <!-- START PORTFOLIO ITEM -->
+                    <li class="grid_item html javascript">
+                        <div class="portfolio_item">
+                            <a href="#" class="image_link">
+                                <img src="assets/images/site13.png" alt="image">
+                            </a>
+                                <div class="portfolio_content">
+                                    <div class="link_container">
+                                        <a href="assets/images/site13_p1.png" class="image_popup"><i class="ion-image"></i></a>
+                                        <a href="assets/images/site13_p2.png" class="image_popup  d-none"></a>
+                                        <a href="assets/images/site13_p3.png" class="image_popup  d-none"></a>
+                                        <a href="assets/images/site13_p4.png" class="image_popup  d-none"></a>
+                                    </div>
+                                    <h5><a href="#" data-toggle="modal" data-target="#pr_modal">Portal Colação de Grau</a></h5>
+                                    <p>Landingpage criada em Javascript para comunicar aos alunos sobre a cerimônia </p>
+                              </div>
+                        </div>
+                    </li>
+                    <!-- END PORTFOLIO ITEM -->
+<!-- END PORTFOLIO ITEM -->
+                                        <!-- START PORTFOLIO ITEM -->
+                    <li class="grid_item wordpress php">
+                        <div class="portfolio_item">
+                            <a href="#" class="image_link">
+                                <img src="assets/images/site21.png" alt="image">
+                            </a>
+                                <div class="portfolio_content">
+                                    <div class="link_container">
+                                        <a href="assets/images/site21_p1.png" class="image_popup"><i class="ion-image"></i></a>
+                                        <a href="assets/images/site21_p2.png" class="image_popup  d-none"></a>
+                                        <a href="assets/images/site21_p3.png" class="image_popup  d-none"></a>
+                                    </div>
+                                    <h5><a href="#" data-toggle="modal" data-target="#pr_modal">E-commerce</a></h5>
+                                    <p>Template de Loja Virtual construida em Woocommerce com PHP</p>
+                              </div>
+                        </div>
+                    </li>
+                    <!-- END PORTFOLIO ITEM -->
+
+                   <!-- START PORTFOLIO ITEM -->
+                   <li class="grid_item wordpress php">
+                    <div class="portfolio_item">
+                        <a href="#" class="image_link">
+                            <img src="assets/images/site22.png" alt="image">
+                        </a>
+                            <div class="portfolio_content">
+                                <div class="link_container">
+                                    <a href="assets/images/site22_p3.png" class="image_popup"><i class="ion-image"></i></a>
+                                    <a href="assets/images/site22_p2.png" class="image_popup  d-none"></a>
+                                    <a href="assets/images/site22_p4.png" class="image_popup  d-none"></a>
+                                </div>
+                                <h5><a href="#" data-toggle="modal" data-target="#pr_modal">Hotsite Barbearia</a></h5>
+                                <p>Site para Barbearia com sistema de agendamento - Wordpress e PHP</p>
+                          </div>
+                    </div>
+                </li>
+                <!-- END PORTFOLIO ITEM -->
+            </ul>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio_modal modal fade" id="pr_modal">
+    	<div class="modal-dialog modal-xl modal-dialog-centered">	
+        	<div class="modal-content bg_black3 scroll_white">
+            	<div class="modal-body">
+                	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">×</span>
+                    </button>
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="carousel_slider owl-carousel owl-theme" data-margin="20" data-dots="false" data-loop="true" data-nav="true" data-autoplay="true" data-items="1">
+                                <div class="item">
+                                    <img src="assets/images/portfolio_img1.jpg" alt="portfolio_img1"/>
+                                </div>
+                                <div class="item">
+                                    <img src="assets/images/portfolio_img2.jpg" alt="portfolio_img2"/>
+                                </div>
+                                <div class="item">
+                                    <img src="assets/images/portfolio_img3.jpg" alt="portfolio_img3"/>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-sm-12 col-xs-12">
-                                <div class="content-right">
-                                    <ul class="timeline">
-                                        <li>
-                                            <h4>Análise e Desenvolvimento de Sistemas</h4>
-                                            <span>Uninove - Bacharelado 2010</span>
-                                        </li>
-                                        <li>
-                                            <h4>Criação de Websites - HTML5 E CSS 3.0</h4>
-                                            <span>Senac - 2012</span>
-                                        </li>
-                                        <li>
-                                            <h4>PHP do Zero ao Avançado</h4>
-                                            <span>B7 Web - 2019</span>
-                                        </li>
-                                        <li>
-                                            <h4>Javascript e Jquery</h4>
-                                            <span>Senac - 2017</span>
-                                        </li>
-                                        <li>
-                                            <h4>Wordpress do Zero ao Avançado</h4>
-                                            <span>B7 Web - 2019</span>
-                                        </li>
-                                        <li>
-                                            <h4>Formação Adobe Editoração: Illustrator, Photoshop e InDesign </h4>
-                                            <span>Senac - 2013</span>
-                                        </li>
-                                        <li>
-                                            <h4>Design para Publicações Digitais</h4>
-                                            <span>Senac - 2017</span>
-                                        </li>
-                                        <li>
-                                            <h4>Curso Moodle - Criando Ambiente EAD</h4>
-                                            <span>Instituto Adriano Gianini - 2013</span>
-                                        </li>
-                                        <li>
-                                            <h4>Formação Adobe Vídeo: Premiere PRO, Encore e After Effects</h4>
-                                            <span>Senac - 2013</span>
-                                        </li>
-                                        <li>
-                                            <h4>Oficina de Vídeo</h4>
-                                            <span>Senac - 2019</span>
-                                        </li>
-
+                        </div>
+                        <div class="col-lg-4">
+                            <ul class="list_none portfolio_info_box pr_info_text_white">
+                                <li><span class="text-uppercase">CLIENT</span>Martyn Vorm</li>
+                                <li><span class="text-uppercase">Date</span>Aprile 2018</li>
+                                <li><span class="text-uppercase">Category</span>Design, Branding</li>
+                                <li><span class="text-uppercase">PROJECT link</span>www.sitename.com</li>
+                                <li><span class="text-uppercase">SHARE </span>
+                                    <ul class="list_none social_icons border_social rounded_social social_white">
+                                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                                        <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                                        <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+                                        <li><a href="#"><i class="ion-social-instagram-outline"></i></a></li>
+                                        <li><a href="#"><i class="ion-social-pinterest"></i></a></li>
                                     </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end my experience -->
-                    </div>
-                    <div class="content">
-                        <!-- my education -->
-                        <div class="row ">
-                            <div class="col-md-6 col-sm-12 col-xs-12">
-                                <div class="content-left">
-                                    <div class="title-resume">
-                                        <h3>Profissional</h3>
-                                        <h2>Um pouco da minha<span>Trajetória Profissional</span></h2>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-12 col-xs-12">
-                                <div class="content-right">
-                                    <ul class="timeline">
-                                        <li>
-                                            <h4>Assistente Técnico Web - Senac - 2021</h4>
-                                            <span class="justificar">Realizo a administração dos Portais do Centro Universitário Senac, bem como sugiro alterações para facilitar o acesso dos usuários e aumentar as visualizações das páginas, faço criação de material gráfico para demandas do campus e eventos, codificação e publicação de e-mails marketing, crio banners web para os portais e hotsites para ações específicas, publico notícias no portal senac e na intranet, através de CMS da instuição.</span>
-                                        </li>
-                                        <li>
-                                            <h4>Assistente Técnico Administrativo - Senac - 2010</h4>
-                                            <span class="justificar">Controle do material de divulgação do campus (cartazes, folders, banners, etc) para melhorias da comunicação visual, responsável por efetuar o lançamento de compras do setor de comunicação no sistema da instituição, contato com fornecedores para realizar orçamentos, elaboração de relatórios de gastos.</span>
-                                        </li>
-                                        <li>
-                                            <h4>Agente Técnico Administrativo - Senac - 2007</h4>
-                                            <span class="justificar">Recepcionista do Centro Universitário Senac, responsável pelo controle de acesso ao prédio da Reitoria, realização de visita guiada no campus com os interessados aos cursos e suporte no atendimento telefônico da unidade.</span>
-                                        </li>
-                                        <li>
-                                            <h4>Operador de Call Center - Divicom - 2003</h4>
-                                            <span>Tele atendimento aos associados do Sindicato dos Bancários, repasse de informações de como os usuários deveriam localizar informações no site da entidade e auxiliá-los no preenchimento de formulários no sistema.</span>
-                                        </li>
-                                        <li>
-                                            <h4>Mensageiro - 1999</h4>
-                                            <span>Entrega de correspondencias nas residências, controle de rotas, supervisão de equipes para determinar o itinerario de trabalho, triagem de documentos, e controle de entrada e saida de mercadorias.</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end my education -->
-                    </div>
-                    <div class="content">
-                        <!-- my skill -->
-                        <div class="my-skill">
-                            <div class="row ">
-                                <div class="col-md-6 col-sm-12 col-xs-12">
-                                    <div class="content-left">
-                                        <div class="title-resume">
-                                            <h3>Conhecimentos</h3>
-                                            <h2>Relação das <span>Minhas Habilidades</span></h2>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-sm-12 col-xs-12">
-                                    <div class="content-right">
-                                        <div id="accordionSkill" class="accordion">
-                                            <div class="card">
-                                                <div id="personalSkill" class="card-header">
-                                                    <h2>
-                                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                                                            <i class="fas fa-circle"></i>Backend
-                                                        </button>
-                                                    </h2>
-                                                </div>
-
-                                                <div id="collapse1" class="collapse collapse-show" aria-labelledby="personalSkill" data-parent="#accordionSkill">
-                                                    <div class="card-body">
-                                                        <ul class="personalSkill">
-                                                            <li>
-                                                                <div class="skill-title">
-                                                                    <span>PHP</span>
-                                                                </div>
-                                                                <div class="progress">
-                                                                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
-                                                                </div>
-                                                            </li>
-                                                            
-                                                            <li>
-                                                                <div class="skill-title">
-                                                                    <span>Javascript</span>
-                                                                </div>
-                                                                <div class="progress">
-                                                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="skill-title">
-                                                                    <span>SQL</span>
-                                                                </div>
-                                                                <div class="progress">
-                                                                    <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="skill-title">
-                                                                    <span>Maria DB</span>
-                                                                </div>
-                                                                <div class="progress">
-                                                                    <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
-                                                                </div>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            
-
-                                            <div class="card">
-                                                <div id="proSkill" class="card-header">
-                                                    <h2>
-                                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
-                                                            <i class="fas fa-circle"></i>Frontend
-                                                        </button>
-                                                    </h2>
-                                                </div>
-
-                                                <div id="collapse2" class="collapse" aria-labelledby="proSkill" data-parent="#accordionSkill">
-                                                    <div class="card-body">
-                                                        <ul class="pro-skill">
-                                                            <li>
-                                                                <div class="skill-title">
-                                                                    <span>HTML</span>
-                                                                </div>
-                                                                <div class="progress">
-                                                                    <div class="progress-bar" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="skill-title">
-                                                                    <span>CSS</span>
-                                                                </div>
-                                                                <div class="progress">
-                                                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="skill-title">
-                                                                    <span>Bootstrap</span>
-                                                                </div>
-                                                                <div class="progress">
-                                                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="skill-title">
-                                                                    <span>Sass</span>
-                                                                </div>
-                                                                <div class="progress">
-                                                                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="skill-title">
-                                                                    <span>React</span>
-                                                                </div>
-                                                                <div class="progress">
-                                                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
-                                                                </div>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-                                            <div class="card">
-                                                <div id="proSkill" class="card-header">
-                                                    <h2>
-                                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
-                                                            <i class="fas fa-circle"></i>Outras Tecnologias
-                                                        </button>
-                                                    </h2>
-                                                </div>
-
-                                                <div id="collapse2" class="collapse" aria-labelledby="proSkill" data-parent="#accordionSkill">
-                                                    <div class="card-body">
-                                                        <ul class="pro-skill">
-                                                            
-                                                            <li>
-                                                                <div class="skill-title">
-                                                                    <span>Git</span>
-                                                                </div>
-                                                                <div class="progress">
-                                                                    <div class="progress-bar" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="skill-title">
-                                                                    <span>Github</span>
-                                                                </div>
-                                                                <div class="progress">
-                                                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="skill-title">
-                                                                    <span>Wordpress</span>
-                                                                </div>
-                                                                <div class="progress">
-                                                                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="skill-title">
-                                                                    <span>JQuery</span>
-                                                                </div>
-                                                                <div class="progress">
-                                                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="skill-title">
-                                                                    <span>Moodle</span>
-                                                                </div>
-                                                                <div class="progress">
-                                                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
-                                                                </div>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end my skill -->
-                    </div>
-                </div>                
-            </div>
-        </div>
-    </div>
-    <!-- end resume -->
-
-
-    <!-- Icones -->
-    <div class="portfolio segments">
-        <div class="container">
-            <div class="section-title section-title-left">
-                <h3 class="titulo-icones">Programas que tenho conhecimento intermediário</h3>
-            </div>
-    
-            <div class="icone row no-gutters icones-img">
-                <div class="col-md-2 col-sm-12 col-xs-12 icones-img">
-                    <div class="content-image content-image-icons icones-img">
-                        <img src="images/logo_vscode.png" class="content-image-icons" alt="">                        
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-12 col-xs-12 icones-img">
-                    <div class="content-image content-image-icons icones-img">
-                        <img src="images/figma-logo.png" class="content-image-icons" alt="">                        
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-12 col-xs-12 icones-img">
-                    <div class="content-image content-image-icons icones-img">
-                        <img src="images/logo_photosohop.png" class="content-image-icons"  alt="">                        
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-12 col-xs-12 icones-img">
-                    <div class="content-image content-image-icons icones-img">
-                        <img src="images/logo_illustrator.png" class="content-image-icons" alt="">                        
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-12 col-xs-12 icones-img">
-                    <div class="content-image content-image-icons icones-img">
-                        <img src="images/logo_indesign.png" class="content-image-icons"  alt="">                        
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-12 col-xs-12 icones-img">
-                    <div class="content-image content-image-icons icones-img">
-                        <img src="images/logo_premiere.png" class="content-image-icons"  alt="">                        
-                    </div>
-                </div>  
-        </div>
-    </div>
-    <!-- end Icones -->
-
-
-    <!-- portfolio -->
-    <div id="portfolio" class="portfolio segments">
-        <div class="container">
-            <div class="box-content">
-                <div class="section-title">
-                    <h3>Trabalhos Realizados</h3>
-                    <span>Os arquivos dos projetos estão disponíveis no meu <a href="https://github.com/fabianosantos79" target="_blank"><strong>GitHub</strong></a> e <a href="https://www.behance.net/fabianossantos" target="_blank"><strong>Behance</strong></a>.</span>
-                </div>
-                <div class="portfolio-filter-menu">
-                    <ul>
-                        <li data-filter="all" class="active">
-                            <span>Todos</span>
-                        </li>
-                        <li data-filter="1">
-                            <span>Frontend</span>
-                        </li>
-                        <li data-filter="2">
-                            <span>Backend</span>
-                        </li>
-                        <li data-filter="3">
-                            <span>Web Design</span>
-                        </li>
-                        <li data-filter="4">
-                            <span>Design Gráfico</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="row no-gutters filtr-container">
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="1">
-                        <div class="content-image">
-                            <a href="images/site16_v2.png" class="portfolio-popup">
-                                <img src="images/site16.png" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>Hilos Hair</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Site criado em Wordpress com Elementor</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="1">
-                        <div class="content-image">
-                            <a href="images/site2.png" class="portfolio-popup">
-                                <img src="images/site2.png" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>Hilos Hair</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Site criado no formato HTML E CSS</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="2">
-                        <div class="content-image">
-                            <a href="images/backend4.png" class="portfolio-popup">
-                                <img src="images/backend4.png" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>Verificador de Idade - Javascript/h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Sistema criado no curso de Javascript</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="1">
-                        <div class="content-image">
-                            <a href="images/site4.png" class="portfolio-popup">
-                                <img src="images/site4.png" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>Bolos da Lú</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Site criado no formato HTML E CSS</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="4">
-                        <div class="content-image">
-                            <a href="images/grafico6.png" class="portfolio-popup">
-                                <img src="images/grafico6.png" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>Banner</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Arte de banner para impressão em lona</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="1">
-                        <div class="content-image">
-                            <a href="images/site5.png" class="portfolio-popup">
-                                <img src="images/site5.png" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>Agil Clean</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Site criado no formato HTML E CSS</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="2">
-                        <div class="content-image">
-                            <a href="images/backend5.png" class="portfolio-popup">
-                                <img src="images/backend5.png" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>CRUD com MVC - PHP</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Sistema criado no curso de PHP</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="1">
-                        <div class="content-image">
-                            <a href="images/site6.png" class="portfolio-popup">
-                                <img src="images/site6.png" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>Fresco</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Site criado no curso de Wordpress</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="4">
-                        <div class="content-image">
-                            <a href="images/grafico1.png" class="portfolio-popup">
-                                <img src="images/grafico1.png" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>Banner</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Banner físico para restaurante</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="1">
-                        <div class="content-image">
-                            <a href="images/site7.png" class="portfolio-popup">
-                                <img src="images/site7.png" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>Medical Center</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Site criado no curso de Css/Flexbox</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="4">
-                        <div class="content-image">
-                            <a href="images/grafico2.png" class="portfolio-popup">
-                                <img src="images/grafico2.png" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>Cartaz</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Cartaz físico para ação promocional</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="1">
-                        <div class="content-image">
-                            <a href="images/site8.png" class="portfolio-popup">
-                                <img src="images/site8.png" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>Projeto de Curso</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Site criado no no curso de HTML5 E CSS3</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="4">
-                        <div class="content-image">
-                            <a href="images/grafico3.png" class="portfolio-popup">
-                                <img src="images/grafico3.png" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>Redes Sociais</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Arte para divulgação no Instagram</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="1">
-                        <div class="content-image">
-                            <a href="images/site9.png" class="portfolio-popup">
-                                <img src="images/site9.png" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>Hotel Paraíso</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Site criado no curso de Css/Flexbox</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="4">
-                        <div class="content-image">
-                            <a href="images/grafico4.png" class="portfolio-popup">
-                                <img src="images/grafico4.png" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>Cartão de Visita</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Arte para divulgação de barbearia</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="1">
-                        <div class="content-image">
-                            <a href="images/site10.png" class="portfolio-popup">
-                                <img src="images/site10.png" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>Elementor</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Site criado no curso de Wordpress/Elementor</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="4">
-                        <div class="content-image">
-                            <a href="images/grafico5.png" class="portfolio-popup">
-                                <img src="images/grafico5.png" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>Cartão de Visita</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Arte para divulgação de serviço cosmético</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="2">
-                        <div class="content-image">
-                            <a href="images/backend1.png" class="portfolio-popup">
-                                <img src="images/backend1.png" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>Sistema de Cadastro - PHP</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Sistema de cadastro criado no curso de PHP</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="1">
-                        <div class="content-image">
-                            <a href="images/site1.png" class="portfolio-popup">
-                                <img src="images/site1.png" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>Site Agilclean</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Site criado no formato HTML E CSS</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="2">
-                        <div class="content-image">
-                            <a href="images/backend2.png" class="portfolio-popup">
-                                <img src="images/backend2.png" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>Pizzaria - Javascript</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Sistema de pizzaria, criado no curso de Javascript</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="2">
-                        <div class="content-image">
-                            <a href="images/backend3.png" class="portfolio-popup">
-                                <img src="images/backend3.png" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>Slideshow - Javascript</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Galeria de fotos criada no curso de Javascript</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="2">
-                        <div class="content-image">
-                            <a href="images/backend6.png" class="portfolio-popup">
-                                <img src="images/backend6.png" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>CRUD - PHP</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Sistema criado no curso de PHP</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="4">
-                        <div class="content-image">
-                            <a href="images/grafico7.png" class="portfolio-popup">
-                                <img src="images/grafico7.png" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>Folheto</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Folheto com 2 dobras para divulgação de serviço</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="4">
-                        <div class="content-image">
-                            <a href="images/grafico8.png" class="portfolio-popup">
-                                <img src="images/grafico8.png" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>Infográfico</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Arte criada para compor ação educacional</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="4">
-                        <div class="content-image">
-                            <a href="images/grafico9.png" class="portfolio-popup">
-                                <img src="images/grafico9.png" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>Revista</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Diagramação de revista física e online</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="4">
-                        <div class="content-image">
-                            <a href="images/grafico10.png" class="portfolio-popup">
-                                <img src="images/grafico10.png" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>Banner</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Banner físico criado para divulgação de ação</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="4">
-                        <div class="content-image">
-                            <a href="images/grafico11.png" class="portfolio-popup">
-                                <img src="images/grafico11.png" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>Logo</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Arte criada para sinalização de Hortifruti</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="1">
-                        <div class="content-image">
-                            <a href="images/site3.png" class="portfolio-popup">
-                                <img src="images/site3.png" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>Help Idiomas</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Site criado no formato HTML E CSS</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="4">
-                        <div class="content-image">
-                            <a href="images/grafico12.png" class="portfolio-popup">
-                                <img src="images/grafico12.png" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>Logo</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Arte criada para sinalização de Lanchonete</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="1">
-                        <div class="content-image">
-                            <a href="images/site14.png" class="portfolio-popup">
-                                <img src="images/site14.png" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>Fabiano Fotos</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Site criado por CMS para colocar o meu portfólio como fotógrafo</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="1">
-                        <div class="content-image">
-                            <a href="images/site13.png" class="portfolio-popup">
-                                <img src="images/site13.png" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>PDI em Tirinhas</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Site criado com HTML5, CSS3 e Javascript, para ilustrar o documento acadêmico.</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="1">
-                        <div class="content-image">
-                            <a href="images/site12.png" class="portfolio-popup">
-                                <img src="images/site12.png" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>Colação de Grau</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Site criado com HTML5, CSS3 e Javascript, para o evento Colação de Grau.</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="1">
-                        <div class="content-image">
-                            <a href="images/site11.png" class="portfolio-popup">
-                                <img src="images/site11.png" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>Estágios, Empregos e Oportunidades</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Site criado com HTML5, CSS3 e Javascript, para divulgar as oportunidades aos alunos.</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="2">
-                        <div class="content-image">
-                            <a href="images/backend7.png" class="portfolio-popup">
-                                <img src="images/backend7.png" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>Sistema de Login</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Sistema de login criado com PHP e banco de dados MYSQL, inclui validação de dados.</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="1">
-                        <div class="content-image">
-                            <a href="images/site15.png" class="portfolio-popup">
-                                <img src="images/site15.png" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>Loja Virtual</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Loja Virtual criada no curso de WooCommerce.</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="2">
-                        <div class="content-image">
-                            <a href="images/backend8.png" class="portfolio-popup">
-                                <img src="images/backend8.png" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>Sistema de Busca</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Sistema de busca simples criado com PHP e banco de dados MYSQL.</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-
-
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="4">
-                        <div class="content-image">
-                            <a href="images/grafico13.png" class="portfolio-popup">
-                                <img src="images/grafico13.png" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>Cartaz A3</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Cartaz criado com Ilustrator.</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="2">
-                        <div class="content-image">
-                            <a href="images/backend9.png" class="portfolio-popup">
-                                <img src="images/backend9.png" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>Crud PHP</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Sistema de cadastro criado com PHP e MYSQL.</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-
-
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="4">
-                        <div class="content-image">
-                            <a href="images/grafico14.png" class="portfolio-popup">
-                                <img src="images/grafico14.png" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>Cartaz A3</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Cartaz criado no Photoshop.</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="4">
-                        <div class="content-image">
-                            <a href="images/grafico15.png" class="portfolio-popup">
-                                <img src="images/grafico15.png" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>Banner físico</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Banner criado no Photoshop.</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="4">
-                        <div class="content-image">
-                            <a href="images/grafico16.png" class="portfolio-popup">
-                                <img src="images/grafico16.png" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>Banner físico</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Banner criado no Ilustrator.</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="4">
-                        <div class="content-image">
-                            <a href="images/grafico19.png" class="portfolio-popup">
-                                <img src="images/grafico19.png" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>Adesivo</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Adesivo criado no Ilustrator para lanchonete.</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="4">
-                        <div class="content-image">
-                            <a href="images/grafico20.png" class="portfolio-popup">
-                                <img src="images/grafico20.png" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>Folheto A4</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Folheto criado no Indesign.</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="4">
-                        <div class="content-image">
-                            <a href="images/grafico21.png" class="portfolio-popup">
-                                <img src="images/grafico21.png" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>Folheto</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Folheto criado no Ilustrator.</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-
-
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="3">
-                        <div class="content-image">
-                            <a href="images/web1.png" class="portfolio-popup">
-                                <img src="images/web1.png" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>E-mail marketing - Outubro Rosa</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Peça de e-mkt criada no Photoshop.</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="3">
-                        <div class="content-image">
-                            <a href="images/web2.png" class="portfolio-popup">
-                                <img src="images/web2.png" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>E-mail Marketing - CIPA</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Peça de e-mkt criada no Photoshop.</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="3">
-                        <div class="content-image">
-                            <a href="images/web3.png" class="portfolio-popup">
-                                <img src="images/web3.png" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>E-mail Marketing Pesquisa</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Peça de e-mkt criada no Ilustrator.</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="3">
-                        <div class="content-image">
-                            <a href="images/web4.png" class="portfolio-popup">
-                                <img src="images/web4.png" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>E-mail marketing SGA</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Peça de e-mkt criada no Photoshop.</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="3">
-                        <div class="content-image">
-                            <a href="images/web5.jpg" class="portfolio-popup">
-                                <img src="images/web5.jpg" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>E-mail Marketing - Evento</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Peça de e-mkt criada no Ilustrator</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="3">
-                        <div class="content-image">
-                            <a href="images/web6.png" class="portfolio-popup">
-                                <img src="images/web6.png" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>E-mail marketing</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Peça de e-mkt criada no Photoshop.</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="3">
-                        <div class="content-image">
-                            <a href="images/web7.png" class="portfolio-popup">
-                                <img src="images/web7.png" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>E-mail marketing Extensão</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Peça de e-mkt criada no Ilustrator.</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="3">
-                        <div class="content-image">
-                            <a href="images/web8.png" class="portfolio-popup">
-                                <img src="images/web8.png" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>Stories para Instagram</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Arte criada no Ilustrator.</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="3">
-                        <div class="content-image">
-                            <a href="images/web9.png" class="portfolio-popup">
-                                <img src="images/web9.png" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>Post Instagram</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Arte criada no Ilustrator.</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    
-                    
-
-                    
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- end portfolio -->
-
-
-    <!-- contact -->
-    <div id="contact" class="contact segments">
-        <div class="container">
-            <div class="box-content">
-                <div class="row">
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <div class="content-left">
-                            <div class="section-title section-title-left">
-                                <h3>Contato</h3>
-                            </div>
-                            <h2>Abaixo meus canais de comunicação<h2>
-                            <ul>
-                                <li>
-                                    <a href="https://www.facebook.com/fabiano.silvasantos.96/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://twitter.com/fabiano_ssantos" target="_blank"><i class="fab fa-twitter"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://fabianosantosfotos.46graus.com/" target="_blank"><i class="fab fa-dribbble"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.instagram.com/fabianossantos/" target="_blank"><i class="fab fa-instagram"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://github.com/fabianosantos79" target="_blank"><img src="images/github.png" height="14px"></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.behance.net/fabianossantos" target="_blank"><img src="images/behance.png" height="14px"></a>
-                                </li>
-                                <li>
-                                    <a href="mailto:fabiano.ssantos79@gmail.com" target="_blank"><i class="far fa-envelope">  fabiano.ssantos79@gmail.com</i></a>
-                                </li>
-                                <li>
-                                    <a href="tel:+5511964805636" target="_blank"><i class="fab fa-whatsapp">  11 9 6480-5636</i></a>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="pf_content text_white">	
+                                <div class="heading_s1">
+                                    <h2>Branded Products</h2>
+                                </div>
+                                <p>Nam eget neque pellentesque efficitur neque at, ornare orci. Vestibulum ligula orci volutpat id aliquet eget, consectetur eget ante. Duis pharetra for nec rhoncus felis sagittis nec amet ultricies lorem.</p>
+                                <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.Iipsum dolor sit amet consectetur adipiscing elitllus blandit massa enim.</p>
+                            </div>
+                        </div>
+                    </div>
+            	</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="portfolio_modal modal fade" id="pr_modal2">
+    	<div class="modal-dialog modal-xl modal-dialog-centered">	
+        	<div class="modal-content bg_black3 scroll_white">
+            	<div class="modal-body">
+                	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">×</span>
+                    </button>
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="carousel_slider owl-carousel owl-theme" data-margin="20" data-dots="false" data-loop="true" data-nav="true" data-autoplay="true" data-items="1">
+                                <div class="item">
+                                    <img src="assets/images/fabiano_foto.jpg" alt="portfolio_img1"/>
+                                </div>
+                                <div class="item">
+                                    <img src="assets/images/site10.png" alt="portfolio_img2"/>
+                                </div>
+                                <div class="item">
+                                    <img src="assets/images/site11.png" alt="portfolio_img3"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <ul class="list_none portfolio_info_box pr_info_text_white">
+                                <li><span class="text-uppercase">Site</span>Teste</li>
+                                <li><span class="text-uppercase">Date</span>Dezembro 2021</li>
+                                <li><span class="text-uppercase">Tecnologias</span>HTML 5, CSS 3 e Javascript </li>
+                                <li><span class="text-uppercase">PROJECT link</span>www.sitename.com</li>
+                            </ul>
+                        </div>
+                    </div>
+            	</div>
+            </div>
+        </div>
+    </div>
+
+
+
+</section>
+
+
+<!-- START SECTION CONTACT -->
+<section id="contact" class="bg_black2">
+	<div class="container">
+    	<div class="row justify-content-center">
+        	<div class="col-xl-6 col-lg-7 col-md-9 text-center">
+            	<div class="heading_s1 heading_light" data-animation="fadeInUp" data-animation-delay="0.02s">
+                	<h2>Contato</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-md-4 text-center">
+                <div class="icon_box icon_box_style_2 box_dark text_white radius_box_10">
+                    <div class="box_icon mb-3">	
+                        <i class="ti-location-pin"></i>
+                    </div>
+                    <div class="icon_box_content">
+                        <h5 class="text-uppercase py-md-2">Endereço</h5>
+                        <p>Avenida Aricanduva - São Paulo</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="icon_box icon_box_style_2 box_dark text_white radius_box_10">
+                    <div class="box_icon mb-3">	
+                        <i class="ti-mobile"></i>
+                    </div>
+                    <div class="icon_box_content">
+                        <h5 class="text-uppercase py-md-2">Celular / Whatsapp</h5>
+                        <p>11 9 6480 5636</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="icon_box icon_box_style_2 box_dark text_white radius_box_10">
+                    <div class="box_icon mb-3">	
+                        <i class="ti-email"></i>
+                    </div>
+                    <div class="icon_box_content">
+                        <h5 class="text-uppercase py-md-2">E-mail</h5>
+                        <p>fabiano.santos79@yahoo.com.br</p>
+                    </div>
+                 </div>
+            </div>
+        </div>
+        <div class="row">
+        	<div class="col-12">
+            	<div class="medium_divider clearfix"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- START SECTION CONTACT -->
+
+<!-- START FOOTER SECTION --> 
+<footer class="footer_dark background_bg overlay_bg_blue_90">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="bottom_footer border_top_tran">
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="copyright m-0 text-center">© 2021 Todos os direitos reservados <a href="#" class="text_default">Fabiano SSantos</a></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- end contact -->
+</footer>
+<!-- END FOOTER SECTION --> 
 
-    <!-- footer -->
-    <div class="footer segments">
-        <div class="container">
-            <div class="box-content">
-                <p>Copyright © Todos os direitos reservado a Fabiano SSantos</p>
-            </div>
-        </div>
-    </div>
-    <!-- end footer -->
+<a href="#" class="scrollup" style="display: none;"><i class="ion-ios-arrow-up"></i></a> 
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/fakeLoader.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.filterizr.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/contact-form.js"></script>
-    <script src="js/main.js"></script>
-
+<!-- Latest jQuery --> 
+<script src="assets/js/jquery-1.12.4.min.js"></script> 
+<!-- jquery-ui --> 
+<script src="assets/js/jquery-ui.js"></script>
+<!-- popper min js --> 
+<script src="assets/js/popper.min.js"></script>
+<!-- Latest compiled and minified Bootstrap --> 
+<script src="assets/bootstrap/js/bootstrap.min.js"></script> 
+<!-- owl-carousel min js  --> 
+<script src="assets/owlcarousel/js/owl.carousel.min.js"></script> 
+<!-- magnific-popup min js  --> 
+<script src="assets/js/magnific-popup.min.js"></script> 
+<!-- waypoints min js  --> 
+<script src="assets/js/waypoints.min.js"></script> 
+<!-- parallax js  --> 
+<script src="assets/js/parallax.js"></script> 
+<!-- countdown js  --> 
+<script src="assets/js/jquery.countdown.min.js"></script> 
+<!-- jquery.counterup.min js --> 
+<script src="assets/js/jquery.counterup.min.js"></script>
+<!-- imagesloaded js -->
+<script src="assets/js/imagesloaded.pkgd.min.js"></script>
+<!-- isotope min js --> 
+<script src="assets/js/isotope.min.js"></script>
+<!-- vanilla-tilt.babel.min js -->
+<script src='assets/js/vanilla-tilt.babel.min.js'></script> 
+<!-- typed.min js --> 
+<script src="assets/js/typed.min.js"></script>
+<!-- typed text js --> 
+<script src="assets/js/typed-text.js"></script>
+<!-- mCustomScrollbar.concat.min js -->
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<!-- scripts js --> 
+<script src="assets/js/scripts.js"></script>
 
 </body>
-
 </html>
